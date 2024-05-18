@@ -1,17 +1,24 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/markdown
 {
 	"name": "blogs",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/base:alpine",
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-	"workspaceFolder": "/workspace",
-
-	// Configure tool-specific properties.
 	"customizations": {
-		"vscode": {			
+		"vscode": {	
+			"settings": {
+                "editor.guides.bracketPairs": true,
+                "editor.formatOnSave": true,
+                "[markdown]": {
+                    "editor.formatOnSave": true,
+                    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+                    "editor.formatOnPaste": true,
+                    "editor.formatOnType": true
+                },
+
+				"markdownlint.config": {
+					"MD014": false,
+					"MD025": false,
+					"MD033": false
+				}
+            },
 			"extensions": [
 				"yzhang.markdown-all-in-one",
 				"streetsidesoftware.code-spell-checker",
@@ -19,7 +26,6 @@
 				"shd101wyy.markdown-preview-enhanced",
 				"bierner.github-markdown-preview",
 				"mushan.vscode-paste-image",
-				"bierner.emojisense",
 				// Git関連
 				"GitHub.vscode-pull-request-github",
 				"github.vscode-github-actions",
@@ -28,13 +34,7 @@
 				"donjayamanne.githistory",
 				"seatonjiang.gitmoji-vscode",
 				// その他
-				"adpyke.vscode-sql-formatter",
-				"streetsidesoftware.code-spell-checker",
 				"naumovs.color-highlight",
-				"formulahendry.auto-rename-tag",
-				"MariusAlchimavicius.json-to-ts",
-				"dsznajder.es7-react-js-snippets",
-				"styled-components.vscode-styled-components",
 				"Gruntfuggly.todo-tree",
 				"oderwat.indent-rainbow",
 				"pkief.material-icon-theme",
@@ -44,8 +44,5 @@
 	},
 
     "postCreateCommand": "sh .devcontainer/post_create.sh",
-    "postStartCommand": "sh .devcontainer/post_start.sh ${containerWorkspaceFolder}",
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+    "postStartCommand": "sh .devcontainer/post_start.sh ${containerWorkspaceFolder}"
 }
