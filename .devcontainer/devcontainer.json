@@ -1,10 +1,11 @@
 {
 	"name": "blogs",
-	"dockerComposeFile": [
-		"../compose.yml",
-		"compose.yml"
+	"runArgs": [
+		"--name=blogs"
 	],
-	"service": "devcontainer",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
 	"workspaceFolder": "/workspace",
 	"customizations": {
 		"vscode": {
@@ -46,5 +47,5 @@
 			]
 		}
 	},
-	"postCreateCommand": "sh .devcontainer/post_create.sh"
+	// "postCreateCommand": "sh .devcontainer/post_create.sh"
 }
