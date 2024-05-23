@@ -15,7 +15,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       # ワークフローの可視化
       - uses: Kesin11/actions-timeline@v2
