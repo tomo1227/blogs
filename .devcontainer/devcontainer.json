@@ -1,11 +1,11 @@
 {
 	"name": "blogs",
-	"runArgs": [
-		"--name=blogs"
+	"dockerComposeFile": [
+		"../compose.yml",
+		"compose.yml"
 	],
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
+	"service": "devcontainer",
+	"workspaceFolder": "/workspace",
 	"customizations": {
 		"vscode": {
 			"settings": {

@@ -1,0 +1,10 @@
+services:
+  devcontainer:
+    hostname: ${PROJECT_NAME}
+    container_name: ${PROJECT_NAME}
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ..:/workspace:cached
+    tty: true
