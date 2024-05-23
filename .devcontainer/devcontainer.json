@@ -46,6 +46,6 @@
 				"ms-azuretools.vscode-docker"
 			]
 		}
-	},
+	}
 	// "postCreateCommand": "sh .devcontainer/post_create.sh"
 }
