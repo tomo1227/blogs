@@ -4,7 +4,7 @@ services:
     container_name: ${PROJECT_NAME}
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: .devcontainer/Dockerfile
     volumes:
-      - ..:/workspace:cached
+      - .:/workspace:cached
     tty: true
