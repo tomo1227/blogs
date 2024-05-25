@@ -1,0 +1,44 @@
+name: cross_platform_test
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - ".gitignore"
+      - "**.md"
+  pull_request:
+    types: [opened, synchronize]
+    paths-ignore:
+      - ".gitignore"
+      - "**.md"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      # ワークフローの可視化
+      - uses: Kesin11/actions-timeline@v2
+      # チェックアウト
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+          fetch-depth: 0
+      # imageをpullする
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+      # devcontainer のテスト
+      - name: Pre-build image and run make ci-build in dev container
+        uses: devcontainers/ci@v0.3
+        with:
+          imageName: ghcr.io/tomo1227/blogs
+          push: always
+          runCmd: |
+            python -V
