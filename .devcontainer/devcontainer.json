@@ -21,6 +21,20 @@
 					"MD014": false,
 					"MD025": false,
 					"MD033": false
+				},
+				"[yaml]": {
+					"editor.defaultFormatter": "redhat.vscode-yaml",
+					"editor.insertSpaces": true,
+					"editor.tabSize": 2,
+					"editor.formatOnSave": true,
+					"files.insertFinalNewline": true
+				},
+				"[json]": {
+					"editor.defaultFormatter": "esbenp.prettier-vscode",
+					"editor.insertSpaces": true,
+					"editor.tabSize": 2,
+					"editor.formatOnSave": true,
+					"files.insertFinalNewline": true
 				}
 			},
 			"extensions": [
@@ -30,6 +44,9 @@
 				"shd101wyy.markdown-preview-enhanced",
 				"bierner.github-markdown-preview",
 				"mushan.vscode-paste-image",
+				// json, yaml formatter
+				"esbenp.prettier-vscode",
+				"redhat.vscode-yaml",
 				// Git関連
 				"GitHub.vscode-pull-request-github",
 				"github.vscode-github-actions",
