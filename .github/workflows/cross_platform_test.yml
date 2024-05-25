@@ -40,7 +40,9 @@ jobs:
           imageName: ghcr.io/tomo1227/blogs
           cacheFrom: ghcr.io/tomo1227/blogs
           push: always
-          runCmd: python -V
+          runCmd: |
+            python -V
+            which docker
       # devcontainerのテスト
       # - name: Build and run Dev Container task
       #   uses: devcontainers/ci@v0.3
