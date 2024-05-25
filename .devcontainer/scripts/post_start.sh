@@ -1,4 +1,3 @@
-#!/bin/bash
 echo "start to copy local ~/.gitconfig"
 git config --global --add safe.directory $1
 
