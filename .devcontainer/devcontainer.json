@@ -63,5 +63,6 @@
 			]
 		}
 	},
-	"postStartCommand": "sh .devcontainer/post_start.sh ${containerWorkspaceFolder}"
+	"postCreateCommand": "sh .devcontainer/scripts/post_create.sh",
+	"postStartCommand": "sh .devcontainer/scripts/post_start.sh ${containerWorkspaceFolder}"
 }
