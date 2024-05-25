@@ -31,7 +31,9 @@
 					"editor.tabSize": 2,
 					"editor.formatOnSave": true,
 					"files.insertFinalNewline": true
-				}
+				},
+				// 文字列形式で絵文字を出力する
+				"gitmoji.outputType": "code"
 			},
 			"extensions": [
 				"yzhang.markdown-all-in-one",
