@@ -39,7 +39,6 @@ jobs:
         uses: devcontainers/ci@v0.3
         with:
           imageName: ghcr.io/tomo1227/blogs
-          cacheFrom: ghcr.io/tomo1227/blogs
           push: always
           runCmd: |
             python -V
