@@ -102,5 +102,11 @@
     ".devcontainer/devcontainer.json",
     "go.work.sum"
   ],
-  "cSpell.words": ["devcontainer", "gitmoji"]
+  "cSpell.words": [
+    "devcontainer",
+    "devcontainers",
+    "gitmoji",
+    "println",
+    "rustc"
+  ]
 }

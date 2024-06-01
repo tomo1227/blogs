@@ -18,7 +18,7 @@ RustのツールセットはOSごとに以下3種類のバージョンがある�
 * nightly
 
 ```shell-session:terminal
-$ rustc -V
+rustc -V
 ```
 
 ## 1.2 Hello, World
@@ -65,7 +65,7 @@ printf("%s, %s!", "Hello", "world");
 print!("First line\nSecond line\nThird line\n");
 ```
 
-```
+```txt
 First line
 Second line
 Third line
@@ -144,7 +144,7 @@ fn main(){
 
 とすると、以下のように出力される
 
-```
+```txt
 These
 are 
 three lines
