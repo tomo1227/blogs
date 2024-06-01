@@ -1,0 +1,106 @@
+{
+  "editor.guides.bracketPairs": true,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.markdownlint": "explicit"
+  },
+  "markdownlint.run": "onSave",
+  "markdownlint.config": {
+    "MD025": false,
+    "MD033": false,
+    "MD034": false
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.formatOnSave": true,
+    "editor.autoIndent": "advanced",
+    "files.insertFinalNewline": true
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": true
+  },
+  "[dockercompose]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "files.insertFinalNewline": true,
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    }
+  },
+  "gitmoji.onlyUseCustomEmoji": true, // カスタマイズした絵文字のみ表示する
+  "gitmoji.addCustomEmoji": [
+    // 絵文字のカスタマイズ
+    {
+      "emoji": "✨",
+      "code": ":sparkles:",
+      "description": "記事修正"
+    },
+    {
+      "emoji": "🎉",
+      "code": ":tada:",
+      "description": "新記事の追加"
+    },
+    {
+      "emoji": "🐛",
+      "code": ":bug:",
+      "description": "バグ修正"
+    },
+    {
+      "emoji": "🚀",
+      "code": ":rocket:",
+      "description": "パフォーマンスや機能の改善"
+    },
+    {
+      "emoji": "♻️",
+      "code": ":recycle:",
+      "description": "リファクタリング"
+    },
+    {
+      "emoji": "📚",
+      "code": ":books:",
+      "description": "ドキュメント"
+    },
+    {
+      "emoji": "💚",
+      "code": ":green_heart:",
+      "description": "テストやCIの修正・改善"
+    },
+    {
+      "emoji": "👕",
+      "code": ":shirt:",
+      "description": "Lintエラーの修正やコードスタイルの修正"
+    },
+    {
+      "emoji": "🚿",
+      "code": ":shower:",
+      "description": "不要な機能・使われなくなった機能の削除"
+    },
+    {
+      "emoji": "🔧",
+      "code": ":wrench:",
+      "description": "依存パッケージなどのアップデート"
+    },
+    {
+      "emoji": "👷",
+      "code": ":construction_worker:",
+      "description": "ビルドシステムや外部依存関係の変更"
+    }
+  ],
+  "cSpell.ignorePaths": [
+    ".vscode",
+    ".devcontainer/devcontainer.json",
+    "go.work.sum"
+  ],
+  "cSpell.words": ["devcontainer", "gitmoji"]
+}

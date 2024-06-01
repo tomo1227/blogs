@@ -40,5 +40,4 @@ jobs:
         with:
           imageName: ghcr.io/tomo1227/blogs
           push: always
-          runCmd: |
-            python -V
+          runCmd:

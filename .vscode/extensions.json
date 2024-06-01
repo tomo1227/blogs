@@ -1,0 +1,29 @@
+{
+  "recommendations": [
+    // yaml, jsonc, json
+    "redhat.vscode-yaml",
+    "esbenp.prettier-vscode",
+    // Git関連
+    "GitHub.vscode-pull-request-github",
+    "github.vscode-github-actions",
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    "donjayamanne.githis",
+    "github.vscode-github-actions",
+    "seatonjiang.gitmoji-vscode",
+    // markdown
+    "yzhang.markdown-all-in-one",
+    "streetsidesoftware.code-spell-checker",
+    "DavidAnson.vscode-markdownlint",
+    "shd101wyy.markdown-preview-enhanced",
+    "bierner.github-markdown-preview",
+    "mushan.vscode-paste-image",
+    // その他
+    "naumovs.color-highlight",
+    "Gruntfuggly.todo-tree",
+    "oderwat.indent-rainbow",
+    "pkief.material-icon-theme",
+    "ms-azuretools.vscode-docker",
+    "streetsidesoftware.code-spell-checker"
+  ]
+}

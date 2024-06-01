@@ -19,7 +19,6 @@ blogs
 
 * 青色の波線がスペルミス
 * オレンジの波線がlinterの警告
-
 マージするときは基本的に `squash merge`する。
 
 ## Branchの切り方
