@@ -1,67 +1,36 @@
 {
-	"name": "blogs",
-    "dockerComposeFile": [
-        "../compose.yml"
-    ],
-    "service": "devcontainer",
-    "workspaceFolder": "/workspace",
-	"customizations": {
-		"vscode": {
-			"settings": {
-				"editor.guides.bracketPairs": true,
-				"editor.formatOnSave": true,
-				"[markdown]": {
-					"editor.formatOnSave": true,
-					"editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
-					"editor.formatOnPaste": true,
-					"editor.formatOnType": true
-				},
-				"markdownlint.config": {
-					"MD014": false,
-					"MD025": false,
-					"MD033": false
-				},
-				"[yaml]": {
-					"editor.defaultFormatter": "redhat.vscode-yaml",
-					"editor.insertSpaces": true,
-					"editor.tabSize": 2,
-					"editor.formatOnSave": true,
-					"files.insertFinalNewline": true
-				},
-				"[json]": {
-					"editor.defaultFormatter": "esbenp.prettier-vscode",
-					"editor.insertSpaces": true,
-					"editor.tabSize": 2,
-					"editor.formatOnSave": true,
-					"files.insertFinalNewline": true
-				}
-			},
-			"extensions": [
-				"yzhang.markdown-all-in-one",
-				"streetsidesoftware.code-spell-checker",
-				"DavidAnson.vscode-markdownlint",
-				"shd101wyy.markdown-preview-enhanced",
-				"bierner.github-markdown-preview",
-				"mushan.vscode-paste-image",
-				// json, yaml formatter
-				"esbenp.prettier-vscode",
-				"redhat.vscode-yaml",
-				// Git関連
-				"GitHub.vscode-pull-request-github",
-				"github.vscode-github-actions",
-				"mhutchie.git-graph",
-				"eamodio.gitlens",
-				"donjayamanne.githistory",
-				"seatonjiang.gitmoji-vscode",
-				// その他
-				"naumovs.color-highlight",
-				"Gruntfuggly.todo-tree",
-				"oderwat.indent-rainbow",
-				"pkief.material-icon-theme",
-				"ms-azuretools.vscode-docker"
-			]
-		}
-	},
-	"postCreateCommand": "sh .devcontainer/scripts/post_create.sh",
-	"postStartCommand": "sh .devcontainer/scripts/post_start.sh ${containerWorkspaceFolder}"
+  "name": "blogs",
+  "dockerComposeFile": ["../compose.yml"],
+  "service": "devcontainer",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "yzhang.markdown-all-in-one",
+        "streetsidesoftware.code-spell-checker",
+        "DavidAnson.vscode-markdownlint",
+        "shd101wyy.markdown-preview-enhanced",
+        "bierner.github-markdown-preview",
+        "mushan.vscode-paste-image",
+        // json, yaml formatter
+        "esbenp.prettier-vscode",
+        "redhat.vscode-yaml",
+        // Git関連
+        "GitHub.vscode-pull-request-github",
+        "github.vscode-github-actions",
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "donjayamanne.githistory",
+        "seatonjiang.gitmoji-vscode",
+        // その他
+        "naumovs.color-highlight",
+        "Gruntfuggly.todo-tree",
+        "oderwat.indent-rainbow",
+        "pkief.material-icon-theme",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "postCreateCommand": "sh .devcontainer/scripts/post_create.sh",
+  "postStartCommand": "sh .devcontainer/scripts/post_start.sh ${containerWorkspaceFolder}"
 }
