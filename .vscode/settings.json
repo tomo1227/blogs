@@ -10,7 +10,7 @@
     "MD033": false,
     "MD034": false
   },
-  "[jsonc]": {
+  "[jsonc][json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
@@ -18,25 +18,13 @@
     "editor.autoIndent": "advanced",
     "files.insertFinalNewline": true
   },
-  "[yaml]": {
+  "[yaml][dockercompose]": {
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
     "editor.autoIndent": "advanced",
     "editor.formatOnSave": true,
     "files.insertFinalNewline": true
-  },
-  "[dockercompose]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml",
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "files.insertFinalNewline": true,
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    }
   },
   "gitmoji.onlyUseCustomEmoji": true, // カスタマイズした絵文字のみ表示する
   "gitmoji.addCustomEmoji": [
@@ -97,10 +85,63 @@
       "description": "ビルドシステムや外部依存関係の変更"
     }
   ],
+  "todo-tree.general.tags": [
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "REVIEW",
+    "OPTIMIZE",
+    "CHANGED",
+    "NOTE",
+    "WARNING"
+  ],
+  "todo-tree.highlights.defaultHighlight": {
+    "foreground": "#000000",
+    "background": "#2C7CFF",
+    "iconColor": "#24ff41",
+    "opacity": 45
+  },
+  "todo-tree.highlights.customHighlight": {
+    "HACK": {
+      "icon": "zap"
+    },
+    "FIXME": {
+      "icon": "flame",
+      "background": "#f11e1e",
+      "iconColor": "#f11e1e"
+    },
+    "TODO": {
+      "icon": "check-circle"
+    },
+    "XXX": {
+      "icon": "x-circle",
+      "background": "#f8831d",
+      "iconColor": "#f8831d"
+    },
+    "REVIEW": {
+      "icon": "pin"
+    },
+    "OPTIMIZE": {
+      "icon": "rocket",
+      "background": "#f8831d",
+      "iconColor": "#f8831d"
+    },
+    "CHANGED": {
+      "icon": "issue-reopened"
+    },
+    "NOTE": {
+      "icon": "thumbsup"
+    },
+    "WARNING": {
+      "icon": "alert",
+      "background": "#f11e1e",
+      "iconColor": "#f11e1e"
+    }
+  },
   "cSpell.ignorePaths": [
     ".vscode",
     ".devcontainer/devcontainer.json",
-    "go.work.sum"
   ],
   "cSpell.words": [
     "devcontainer",

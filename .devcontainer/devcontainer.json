@@ -1,8 +1,8 @@
 {
   "name": "blogs",
-  "dockerComposeFile": ["../compose.yml"],
   "service": "devcontainer",
   "workspaceFolder": "/workspace",
+  "dockerComposeFile": ["../compose.yml"],
   "customizations": {
     "vscode": {
       "extensions": [
