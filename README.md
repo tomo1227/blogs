@@ -1,6 +1,6 @@
 # blogs
 
-[![CodeQL](https://github.com/tomo1227/blogs/actions/workflows/code_ql.yml/badge.svg)](https://github.com/tomo1227/blogs/actions/workflows/code_ql.yml)
+[![CodeQL](https://github.com/tomo1227/blogs/actions/workflows/code_ql.yml/badge.svg)](https://github.com/tomo1227/blogs/actions/workflows/code_ql.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 HPに投稿する記事を管理するリポジトリ
 
