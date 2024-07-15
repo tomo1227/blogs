@@ -1,5 +1,7 @@
 # blogs
 
+[![CodeQL](https://github.com/tomo1227/blogs/actions/workflows/code_ql.yml/badge.svg)](https://github.com/tomo1227/blogs/actions/workflows/code_ql.yml)
+
 HPに投稿する記事を管理するリポジトリ
 
 ## ディレクトリ構成
