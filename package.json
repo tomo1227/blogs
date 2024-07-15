@@ -4,7 +4,9 @@
     "dev": "bun run --hot src/index.ts"
   },
   "dependencies": {
-    "hono": "^4.4.13"
+    "hono": "^4.4.13",
+    "zenn-content-css": "^0.1.154",
+    "zenn-markdown-html": "^0.1.154"
   },
   "devDependencies": {
     "@types/bun": "latest"
