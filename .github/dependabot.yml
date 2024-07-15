@@ -8,13 +8,6 @@ updates:
       prefix: "build🤖 "
 
   - package-ecosystem: "docker"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    commit-message:
-      prefix: "build🤖 "
-
-  - package-ecosystem: "docker"
     directory: "/.devcontainer"
     schedule:
       interval: "weekly"

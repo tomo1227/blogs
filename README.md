@@ -1,5 +1,7 @@
 # blogs
 
+[![CodeQL](https://github.com/tomo1227/blogs/actions/workflows/code_ql.yml/badge.svg)](https://github.com/tomo1227/blogs/actions/workflows/code_ql.yml) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 HPに投稿する記事を管理するリポジトリ
 
 ## ディレクトリ構成
@@ -19,7 +21,6 @@ blogs
 
 * 青色の波線がスペルミス
 * オレンジの波線がlinterの警告
-マージするときは基本的に `squash merge`する。
 
 ## Branchの切り方
 
