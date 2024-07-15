@@ -1,15 +1,39 @@
 {
+  "editor.formatOnSave": false,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
   "editor.guides.bracketPairs": true,
-  "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.markdownlint": "explicit"
   },
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "files.insertFinalNewline": true
+  },
+  "editor.rulers": [120],
+  "[markdown]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint",
+    "editor.formatOnPaste": true,
+    "editor.formatOnType": true
+  },
   "markdownlint.run": "onSave",
   "markdownlint.config": {
+    "MD010": false,
     "MD025": false,
     "MD033": false,
     "MD034": false
   },
+  "markdown.extension.print.theme": "dark",
+  "markdown.copyFiles.destination": {
+    "**/*": "../media/img/img.${fileExtName}"
+  },
+  "markdown-preview-enhanced.codeBlockTheme": "solarized-light.css",
+  "markdown.extension.toc.unorderedList.marker": "*",
+  "markdown.extension.orderedList.marker": "one",
   "[jsonc][json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.insertSpaces": true,
@@ -18,6 +42,7 @@
     "editor.autoIndent": "advanced",
     "files.insertFinalNewline": true
   },
+  "json.schemaDownload.enable": true,
   "[yaml][dockercompose]": {
     "editor.defaultFormatter": "redhat.vscode-yaml",
     "editor.insertSpaces": true,
@@ -149,5 +174,24 @@
     "gitmoji",
     "println",
     "rustc"
-  ]
+  ],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#05848b",
+    "activityBar.background": "#05848b",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#fb84f4",
+    "activityBarBadge.foreground": "#15202b",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#05848b",
+    "statusBar.background": "#03555a",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#05848b",
+    "statusBarItem.remoteBackground": "#03555a",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#03555a",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#03555a99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  }
 }
